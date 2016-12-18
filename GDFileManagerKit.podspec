@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/GrahamDennis/GDFileManagerKit.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/steve21124/GDFileManagerKit.git" }
   s.source_files  = 'Source/**/*.{h,m}'
 
   s.resource_bundle = { 'GDFileManagerKit' => "Source/**/*.{png,xml,json,xcdatamodeld,storyboard,xib}"}
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency 'AFNetworking', '~> 1.3'
+  s.dependency 'AFNetworking'
   s.dependency 'SSKeychain'
   s.dependency 'UIAlertView-Blocks'
   s.dependency 'AFKissXMLRequestOperation'
